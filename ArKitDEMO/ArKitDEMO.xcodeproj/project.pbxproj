@@ -16,6 +16,7 @@
 		FBD78D3C28A24E88004CA880 /* ArKitDEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D3B28A24E88004CA880 /* ArKitDEMOTests.swift */; };
 		FBD78D4628A24E89004CA880 /* ArKitDEMOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D4528A24E89004CA880 /* ArKitDEMOUITests.swift */; };
 		FBD78D4828A24E89004CA880 /* ArKitDEMOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D4728A24E89004CA880 /* ArKitDEMOUITestsLaunchTests.swift */; };
+		FBD78D5528A25A7A004CA880 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D5428A25A7A004CA880 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FBD78D4128A24E89004CA880 /* ArKitDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArKitDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD78D4528A24E89004CA880 /* ArKitDEMOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArKitDEMOUITests.swift; sourceTree = "<group>"; };
 		FBD78D4728A24E89004CA880 /* ArKitDEMOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArKitDEMOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBD78D5428A25A7A004CA880 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				FBD78D2B28A24E87004CA880 /* Main.storyboard */,
 				FBD78D2E28A24E88004CA880 /* Assets.xcassets */,
 				FBD78D3028A24E88004CA880 /* LaunchScreen.storyboard */,
+				FBD78D5428A25A7A004CA880 /* Extensions.swift */,
 			);
 			path = ArKitDEMO;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD78D2A28A24E87004CA880 /* ViewController.swift in Sources */,
+				FBD78D5528A25A7A004CA880 /* Extensions.swift in Sources */,
 				FBD78D2628A24E87004CA880 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +449,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +480,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
