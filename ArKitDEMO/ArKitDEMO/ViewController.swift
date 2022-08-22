@@ -25,10 +25,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        let missleScene = SCNScene(named: "missile-1.scn")
+        let missle = Missle(scene: missleScene!)
+        missle.name = "Missile"
+        missle.position = SCNVector3(0,0,-4)
+//        let missleNode = missleScene?.rootNode.childNode(withName: "missileNode", recursively: true)
+//        missleNode?.position = SCNVector3(0,0,-0.5)
+        
         // Create a new scene
         let scene = SCNScene()
         
         // Set the scene to the view
+        scene.rootNode.addChildNode(missle)
         sceneView.scene = scene
         registerGestureRecognizers()
     }
@@ -63,18 +71,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     @objc func tapped(recognizer :UIGestureRecognizer) {
         
-        let sceneView = recognizer.view as! ARSCNView
-        let touchLocation = recognizer.location(in: sceneView)
+//        let sceneView = recognizer.view as! ARSCNView
+//        let touchLocation = recognizer.location(in: sceneView)
+//
+//        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
+//
+//        if !hitTestResult.isEmpty {
+//
+//            guard let hitResult = hitTestResult.first else {
+//                return
+//            }
+//            addBox(hitResult :hitResult)
+//        }
         
-        let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
-        
-        if !hitTestResult.isEmpty {
-            
-            guard let hitResult = hitTestResult.first else {
-                return
-            }
-            addBox(hitResult :hitResult)
+        guard let missileNode = self.sceneView.scene.rootNode.childNode(withName: "Missile", recursively: true) else {
+            fatalError("Missile not found")
         }
+        guard let smokeNode = self.sceneView.scene.rootNode.childNode(withName: "smokeNode", recursively: true) else {
+            fatalError("No Smoke found")
+        }
+        smokeNode.removeAllParticleSystems()
+        let fire = SCNParticleSystem(named: "fire.scnp", inDirectory: nil)
+        smokeNode.addParticleSystem(fire!)
+        missileNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        missileNode.physicsBody?.isAffectedByGravity = false
+        missileNode.physicsBody?.damping = 0.0
+        missileNode.physicsBody?.applyForce(SCNVector3(0,50,0), asImpulse: false)
     }
     
     private func addBox(hitResult :ARHitTestResult) {

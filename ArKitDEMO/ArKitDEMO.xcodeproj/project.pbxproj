@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBB51AD728B359670019F408 /* missile-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD628B359670019F408 /* missile-1.scn */; };
+		FBB51AD928B3596F0019F408 /* missle-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD828B3596F0019F408 /* missle-texture.png */; };
+		FBB51ADB28B374060019F408 /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB51ADA28B374060019F408 /* Missile.swift */; };
+		FBB51ADD28B37BB90019F408 /* smoke.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FBB51ADC28B37BB90019F408 /* smoke.scnp */; };
+		FBB51ADF28B37BD70019F408 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51ADE28B37BD70019F408 /* smoke.png */; };
+		FBB51AE528B390730019F408 /* fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AE428B390730019F408 /* fire.scnp */; };
+		FBB51AE728B3907A0019F408 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AE628B3907A0019F408 /* spark.png */; };
 		FBD78D2628A24E87004CA880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D2528A24E87004CA880 /* AppDelegate.swift */; };
 		FBD78D2828A24E87004CA880 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD78D2728A24E87004CA880 /* art.scnassets */; };
 		FBD78D2A28A24E87004CA880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D2928A24E87004CA880 /* ViewController.swift */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBB51AD628B359670019F408 /* missile-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "missile-1.scn"; sourceTree = "<group>"; };
+		FBB51AD828B3596F0019F408 /* missle-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missle-texture.png"; sourceTree = "<group>"; };
+		FBB51ADA28B374060019F408 /* Missile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
+		FBB51ADC28B37BB90019F408 /* smoke.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = smoke.scnp; sourceTree = "<group>"; };
+		FBB51ADE28B37BD70019F408 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		FBB51AE428B390730019F408 /* fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = fire.scnp; sourceTree = "<group>"; };
+		FBB51AE628B3907A0019F408 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		FBD78D2228A24E87004CA880 /* ArKitDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArKitDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD78D2528A24E87004CA880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD78D2728A24E87004CA880 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -102,6 +116,12 @@
 		FBD78D2428A24E87004CA880 /* ArKitDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FBB51AE628B3907A0019F408 /* spark.png */,
+				FBB51AE428B390730019F408 /* fire.scnp */,
+				FBB51ADE28B37BD70019F408 /* smoke.png */,
+				FBB51ADC28B37BB90019F408 /* smoke.scnp */,
+				FBB51AD828B3596F0019F408 /* missle-texture.png */,
+				FBB51AD628B359670019F408 /* missile-1.scn */,
 				FBD78D5828A26EE4004CA880 /* overlay_grid.png */,
 				FBD78D5628A26D35004CA880 /* OverlayPlane.swift */,
 				FBD78D2528A24E87004CA880 /* AppDelegate.swift */,
@@ -110,6 +130,7 @@
 				FBD78D2B28A24E87004CA880 /* Main.storyboard */,
 				FBD78D2E28A24E88004CA880 /* Assets.xcassets */,
 				FBD78D3028A24E88004CA880 /* LaunchScreen.storyboard */,
+				FBB51ADA28B374060019F408 /* Missile.swift */,
 			);
 			path = ArKitDEMO;
 			sourceTree = "<group>";
@@ -235,9 +256,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB51AE728B3907A0019F408 /* spark.png in Resources */,
 				FBD78D2828A24E87004CA880 /* art.scnassets in Resources */,
+				FBB51AE528B390730019F408 /* fire.scnp in Resources */,
+				FBB51ADF28B37BD70019F408 /* smoke.png in Resources */,
 				FBD78D5928A26EE4004CA880 /* overlay_grid.png in Resources */,
+				FBB51AD928B3596F0019F408 /* missle-texture.png in Resources */,
+				FBB51ADD28B37BB90019F408 /* smoke.scnp in Resources */,
 				FBD78D3228A24E88004CA880 /* LaunchScreen.storyboard in Resources */,
+				FBB51AD728B359670019F408 /* missile-1.scn in Resources */,
 				FBD78D2F28A24E88004CA880 /* Assets.xcassets in Resources */,
 				FBD78D2D28A24E87004CA880 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +293,7 @@
 			files = (
 				FBD78D2A28A24E87004CA880 /* ViewController.swift in Sources */,
 				FBD78D5728A26D35004CA880 /* OverlayPlane.swift in Sources */,
+				FBB51ADB28B374060019F408 /* Missile.swift in Sources */,
 				FBD78D2628A24E87004CA880 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7XJG666ZW;
@@ -453,7 +482,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +490,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ArKitDEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7XJG666ZW;
@@ -484,7 +515,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +523,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ArKitDEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
