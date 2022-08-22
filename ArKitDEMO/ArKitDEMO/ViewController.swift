@@ -13,6 +13,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     var planes = [OverlayPlane]()
+    var boxes = [SCNNode]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,30 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
         self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        
+        let doubleTappedGestureReconizer = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        doubleTappedGestureReconizer.numberOfTapsRequired = 2
+        
+        tapGestureRecognizer.require(toFail: doubleTappedGestureReconizer)
+        
+        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+        self.sceneView.addGestureRecognizer(doubleTappedGestureReconizer)
     }
     
+    @objc func doubleTapped(recognizer : UIGestureRecognizer) {
+        let sceneView = recognizer.view as! ARSCNView
+        let touch  = recognizer.location(in: sceneView)
+        
+        let hitResults = sceneView.hitTest(touch,options: [:])
+        if !hitResults.isEmpty {
+            guard let hitResults = hitResults.first else {
+                return
+            }
+            
+            let node = hitResults.node
+            node.physicsBody?.applyForce(SCNVector3(hitResults.worldCoordinates.x * (2.0),2.0,hitResults.worldCoordinates.z * (2.0)), asImpulse: true)
+        }
+    }
     @objc func tapped(recognizer :UIGestureRecognizer) {
         
         let sceneView = recognizer.view as! ARSCNView
@@ -63,6 +86,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         boxGeometry.materials = [material]
         
         let boxNode = SCNNode(geometry: boxGeometry)
+        boxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape:nil)
+        boxNode.physicsBody?.categoryBitMask = BodyType.box.rawValue
+        self.boxes.append(boxNode)
         
         boxNode.position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y + Float(boxGeometry.height/2), hitResult.worldTransform.columns.3.z)
         
