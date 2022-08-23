@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */; };
 		FBB51AD728B359670019F408 /* missile-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD628B359670019F408 /* missile-1.scn */; };
 		FBB51AD928B3596F0019F408 /* missle-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD828B3596F0019F408 /* missle-texture.png */; };
 		FBB51ADB28B374060019F408 /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB51ADA28B374060019F408 /* Missile.swift */; };
@@ -16,7 +17,7 @@
 		FBB51AE728B3907A0019F408 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AE628B3907A0019F408 /* spark.png */; };
 		FBD78D2628A24E87004CA880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D2528A24E87004CA880 /* AppDelegate.swift */; };
 		FBD78D2828A24E87004CA880 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD78D2728A24E87004CA880 /* art.scnassets */; };
-		FBD78D2A28A24E87004CA880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D2928A24E87004CA880 /* ViewController.swift */; };
+		FBD78D2A28A24E87004CA880 /* MissileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD78D2928A24E87004CA880 /* MissileViewController.swift */; };
 		FBD78D2D28A24E87004CA880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD78D2B28A24E87004CA880 /* Main.storyboard */; };
 		FBD78D2F28A24E88004CA880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD78D2E28A24E88004CA880 /* Assets.xcassets */; };
 		FBD78D3228A24E88004CA880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD78D3028A24E88004CA880 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		FBB51AD628B359670019F408 /* missile-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "missile-1.scn"; sourceTree = "<group>"; };
 		FBB51AD828B3596F0019F408 /* missle-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missle-texture.png"; sourceTree = "<group>"; };
 		FBB51ADA28B374060019F408 /* Missile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		FBD78D2228A24E87004CA880 /* ArKitDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArKitDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD78D2528A24E87004CA880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD78D2728A24E87004CA880 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		FBD78D2928A24E87004CA880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBD78D2928A24E87004CA880 /* MissileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissileViewController.swift; sourceTree = "<group>"; };
 		FBD78D2C28A24E87004CA880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD78D2E28A24E88004CA880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD78D3128A24E88004CA880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,11 +128,12 @@
 				FBD78D5628A26D35004CA880 /* OverlayPlane.swift */,
 				FBD78D2528A24E87004CA880 /* AppDelegate.swift */,
 				FBD78D2728A24E87004CA880 /* art.scnassets */,
-				FBD78D2928A24E87004CA880 /* ViewController.swift */,
+				FBD78D2928A24E87004CA880 /* MissileViewController.swift */,
 				FBD78D2B28A24E87004CA880 /* Main.storyboard */,
 				FBD78D2E28A24E88004CA880 /* Assets.xcassets */,
 				FBD78D3028A24E88004CA880 /* LaunchScreen.storyboard */,
 				FBB51ADA28B374060019F408 /* Missile.swift */,
+				FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */,
 			);
 			path = ArKitDEMO;
 			sourceTree = "<group>";
@@ -291,7 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD78D2A28A24E87004CA880 /* ViewController.swift in Sources */,
+				FBD78D2A28A24E87004CA880 /* MissileViewController.swift in Sources */,
+				FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */,
 				FBD78D5728A26D35004CA880 /* OverlayPlane.swift in Sources */,
 				FBB51ADB28B374060019F408 /* Missile.swift in Sources */,
 				FBD78D2628A24E87004CA880 /* AppDelegate.swift in Sources */,
