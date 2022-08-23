@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HGn-gx-pDS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="missileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="MissileViewController" customModule="ArKitDEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
                             </arscnView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
@@ -42,23 +42,35 @@
             <objects>
                 <viewController id="joK-g6-Ai5" customClass="LaunchViewController" customModule="ArKitDEMO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iy8-8x-ql6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPV-Bu-95p">
-                                <rect key="frame" x="147" y="432.5" width="120" height="31"/>
+                                <rect key="frame" x="38.666666666666657" y="123" width="313" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Missile Launch"/>
                                 <connections>
                                     <action selector="onClickMissileLaunch:" destination="joK-g6-Ai5" eventType="touchUpInside" id="qaV-fy-TO7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghO-aF-xrV">
+                                <rect key="frame" x="39" y="223" width="312" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Target Shooting"/>
+                                <connections>
+                                    <action selector="onClickTargetShooting:" destination="joK-g6-Ai5" eventType="touchUpInside" id="Qtg-M8-IHx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i2m-Xe-ZEJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LPV-Bu-95p" firstAttribute="centerY" secondItem="Iy8-8x-ql6" secondAttribute="centerY" id="1da-Ja-ge3"/>
-                            <constraint firstItem="LPV-Bu-95p" firstAttribute="centerX" secondItem="Iy8-8x-ql6" secondAttribute="centerX" id="65t-Wb-Kzi"/>
+                            <constraint firstItem="ghO-aF-xrV" firstAttribute="width" secondItem="Iy8-8x-ql6" secondAttribute="width" multiplier="0.8" id="Zfg-3D-yWk"/>
+                            <constraint firstItem="ghO-aF-xrV" firstAttribute="top" secondItem="LPV-Bu-95p" secondAttribute="bottom" constant="69" id="oJN-P5-IFm"/>
+                            <constraint firstItem="ghO-aF-xrV" firstAttribute="centerX" secondItem="Iy8-8x-ql6" secondAttribute="centerX" id="oP0-wu-LCZ"/>
+                            <constraint firstItem="LPV-Bu-95p" firstAttribute="width" secondItem="Iy8-8x-ql6" secondAttribute="width" multiplier="0.8" constant="1" id="pik-9a-OcH"/>
+                            <constraint firstItem="LPV-Bu-95p" firstAttribute="centerX" secondItem="Iy8-8x-ql6" secondAttribute="centerX" id="wLF-ea-EkP"/>
+                            <constraint firstItem="LPV-Bu-95p" firstAttribute="top" secondItem="i2m-Xe-ZEJ" secondAttribute="top" constant="35" id="xPm-X0-IyH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aCy-SO-WDQ"/>
@@ -67,13 +79,42 @@
             </objects>
             <point key="canvasLocation" x="1660.8695652173915" y="64.955357142857139"/>
         </scene>
+        <!--Target Shooting View Controller-->
+        <scene sceneID="w5C-Lh-HJz">
+            <objects>
+                <viewController storyboardIdentifier="targetShootingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9EO-Td-pu0" customClass="TargetShootingViewController" customModule="ArKitDEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jHR-fc-TbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKk-4t-a3b">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZxZ-DN-8Fl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QKk-4t-a3b" firstAttribute="top" secondItem="ZxZ-DN-8Fl" secondAttribute="top" id="D2A-Rm-OWJ"/>
+                            <constraint firstItem="ZxZ-DN-8Fl" firstAttribute="bottom" secondItem="QKk-4t-a3b" secondAttribute="bottom" id="MHv-FS-0fm"/>
+                            <constraint firstItem="ZxZ-DN-8Fl" firstAttribute="trailing" secondItem="QKk-4t-a3b" secondAttribute="trailing" id="lC1-kN-dsv"/>
+                            <constraint firstItem="QKk-4t-a3b" firstAttribute="leading" secondItem="ZxZ-DN-8Fl" secondAttribute="leading" id="ulk-IA-vNA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="QKk-4t-a3b" id="dat-pk-261"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dO-WE-bQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="68"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HWO-Lb-Xdc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HGn-gx-pDS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1wJ-rk-FXE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

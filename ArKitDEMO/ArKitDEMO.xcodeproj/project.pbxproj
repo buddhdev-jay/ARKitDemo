@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB12374028B4CC2400113492 /* TargetShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12373F28B4CC2400113492 /* TargetShootingViewController.swift */; };
 		FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */; };
 		FBB51AD728B359670019F408 /* missile-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD628B359670019F408 /* missile-1.scn */; };
 		FBB51AD928B3596F0019F408 /* missle-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD828B3596F0019F408 /* missle-texture.png */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB12373F28B4CC2400113492 /* TargetShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetShootingViewController.swift; sourceTree = "<group>"; };
 		FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		FBB51AD628B359670019F408 /* missile-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "missile-1.scn"; sourceTree = "<group>"; };
 		FBB51AD828B3596F0019F408 /* missle-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missle-texture.png"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		FBD78D2428A24E87004CA880 /* ArKitDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				FB12373F28B4CC2400113492 /* TargetShootingViewController.swift */,
 				FBB51AE628B3907A0019F408 /* spark.png */,
 				FBB51AE428B390730019F408 /* fire.scnp */,
 				FBB51ADE28B37BD70019F408 /* smoke.png */,
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB12374028B4CC2400113492 /* TargetShootingViewController.swift in Sources */,
 				FBD78D2A28A24E87004CA880 /* MissileViewController.swift in Sources */,
 				FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */,
 				FBD78D5728A26D35004CA880 /* OverlayPlane.swift in Sources */,

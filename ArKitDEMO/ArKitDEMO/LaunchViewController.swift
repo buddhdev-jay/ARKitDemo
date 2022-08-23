@@ -17,7 +17,12 @@ class LaunchViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onClickTargetShooting(_ sender: UIButton) {
+        if let missileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "targetShootingViewController") as? TargetShootingViewController{
+            self.navigationController?.pushViewController(missileVC, animated: true)
+        }
+    }
+    
     @IBAction func onClickMissileLaunch(_ sender: UIButton) {
         if let missileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "missileViewController") as? MissileViewController{
             self.navigationController?.pushViewController(missileVC, animated: true)
