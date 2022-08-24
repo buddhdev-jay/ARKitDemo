@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB12374028B4CC2400113492 /* TargetShootingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12373F28B4CC2400113492 /* TargetShootingViewController.swift */; };
+		FB12374228B5F64000113492 /* MeasureAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12374128B5F64000113492 /* MeasureAppViewController.swift */; };
 		FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */; };
 		FBB51AD728B359670019F408 /* missile-1.scn in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD628B359670019F408 /* missile-1.scn */; };
 		FBB51AD928B3596F0019F408 /* missle-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB51AD828B3596F0019F408 /* missle-texture.png */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		FB12373F28B4CC2400113492 /* TargetShootingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetShootingViewController.swift; sourceTree = "<group>"; };
+		FB12374128B5F64000113492 /* MeasureAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureAppViewController.swift; sourceTree = "<group>"; };
 		FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		FBB51AD628B359670019F408 /* missile-1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "missile-1.scn"; sourceTree = "<group>"; };
 		FBB51AD828B3596F0019F408 /* missle-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missle-texture.png"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				FBD78D3028A24E88004CA880 /* LaunchScreen.storyboard */,
 				FBB51ADA28B374060019F408 /* Missile.swift */,
 				FB6AD2EE28B4A6C200F90BE5 /* LaunchViewController.swift */,
+				FB12374128B5F64000113492 /* MeasureAppViewController.swift */,
 			);
 			path = ArKitDEMO;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB12374028B4CC2400113492 /* TargetShootingViewController.swift in Sources */,
+				FB12374228B5F64000113492 /* MeasureAppViewController.swift in Sources */,
 				FBD78D2A28A24E87004CA880 /* MissileViewController.swift in Sources */,
 				FB6AD2EF28B4A6C200F90BE5 /* LaunchViewController.swift in Sources */,
 				FBD78D5728A26D35004CA880 /* OverlayPlane.swift in Sources */,

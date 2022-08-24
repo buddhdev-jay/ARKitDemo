@@ -18,8 +18,13 @@ class LaunchViewController: UIViewController {
     }
     
     @IBAction func onClickTargetShooting(_ sender: UIButton) {
-        if let missileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "targetShootingViewController") as? TargetShootingViewController{
-            self.navigationController?.pushViewController(missileVC, animated: true)
+        if let targetShootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "targetShootingViewController") as? TargetShootingViewController{
+            self.navigationController?.pushViewController(targetShootVC, animated: true)
+        }
+    }
+    @IBAction func onClickMeasureApp(_ sender: UIButton) {
+        if let measureAppVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "measureAppViewController") as? MeasureAppViewController{
+            self.navigationController?.pushViewController(measureAppVC, animated: true)
         }
     }
     
@@ -29,3 +34,4 @@ class LaunchViewController: UIViewController {
         }
     }
 }
+   

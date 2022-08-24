@@ -61,11 +61,22 @@
                                     <action selector="onClickTargetShooting:" destination="joK-g6-Ai5" eventType="touchUpInside" id="Qtg-M8-IHx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LG-lU-JdV">
+                                <rect key="frame" x="39" y="294" width="312" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Measure App"/>
+                                <connections>
+                                    <action selector="onClickMeasureApp:" destination="joK-g6-Ai5" eventType="touchUpInside" id="Qrg-Co-Fai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i2m-Xe-ZEJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8LG-lU-JdV" firstAttribute="width" secondItem="Iy8-8x-ql6" secondAttribute="width" multiplier="0.8" id="YWS-l7-i84"/>
                             <constraint firstItem="ghO-aF-xrV" firstAttribute="width" secondItem="Iy8-8x-ql6" secondAttribute="width" multiplier="0.8" id="Zfg-3D-yWk"/>
+                            <constraint firstItem="8LG-lU-JdV" firstAttribute="centerX" secondItem="Iy8-8x-ql6" secondAttribute="centerX" id="bjl-TX-9Lj"/>
+                            <constraint firstItem="8LG-lU-JdV" firstAttribute="top" secondItem="ghO-aF-xrV" secondAttribute="bottom" constant="40" id="gFq-qw-jAQ"/>
                             <constraint firstItem="ghO-aF-xrV" firstAttribute="top" secondItem="LPV-Bu-95p" secondAttribute="bottom" constant="69" id="oJN-P5-IFm"/>
                             <constraint firstItem="ghO-aF-xrV" firstAttribute="centerX" secondItem="Iy8-8x-ql6" secondAttribute="centerX" id="oP0-wu-LCZ"/>
                             <constraint firstItem="LPV-Bu-95p" firstAttribute="width" secondItem="Iy8-8x-ql6" secondAttribute="width" multiplier="0.8" constant="1" id="pik-9a-OcH"/>
@@ -107,6 +118,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dO-WE-bQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2348" y="68"/>
+        </scene>
+        <!--Measure App View Controller-->
+        <scene sceneID="1pF-wF-qX6">
+            <objects>
+                <viewController storyboardIdentifier="measureAppViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kxk-xo-Smc" customClass="MeasureAppViewController" customModule="ArKitDEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MQZ-vL-2Zg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7d-EN-mBL">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cyt-5k-5o9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N7d-EN-mBL" firstAttribute="top" secondItem="cyt-5k-5o9" secondAttribute="top" id="4Dh-kl-d0d"/>
+                            <constraint firstItem="cyt-5k-5o9" firstAttribute="bottom" secondItem="N7d-EN-mBL" secondAttribute="bottom" id="ZY0-GX-8ZD"/>
+                            <constraint firstItem="cyt-5k-5o9" firstAttribute="trailing" secondItem="N7d-EN-mBL" secondAttribute="trailing" id="uKS-B6-Ddu"/>
+                            <constraint firstItem="N7d-EN-mBL" firstAttribute="leading" secondItem="cyt-5k-5o9" secondAttribute="leading" id="w8B-iv-uGI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="N7d-EN-mBL" id="IxO-2V-Uhz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFM-tc-8uh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3102" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HWO-Lb-Xdc">
